@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Solution Items", "00 - Solution Items", "{8F6FBA6B-AAFB-4D46-B268-67723BD20E6D}"
+	ProjectSection(SolutionItems) = preProject
+		..\.editorconfig = ..\.editorconfig
+		..\.gitattributes = ..\.gitattributes
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Testes de Unidade", "01 - Testes de Unidade", "{DC6E011B-C606-4068-B6D3-5F559EEE692B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes Basicos", "Testes Basicos", "{52BE4966-1D02-4263-B82E-C150D5959739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "src\Demo\Demo.csproj", "{985E9F06-6D52-4A6E-8CAF-DDA08FBAE4BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Tests", "tests\Demo.Tests\Demo.Tests.csproj", "{5DE56EE8-69DD-4B80-BC46-9717D0F2A012}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{985E9F06-6D52-4A6E-8CAF-DDA08FBAE4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985E9F06-6D52-4A6E-8CAF-DDA08FBAE4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985E9F06-6D52-4A6E-8CAF-DDA08FBAE4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985E9F06-6D52-4A6E-8CAF-DDA08FBAE4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE56EE8-69DD-4B80-BC46-9717D0F2A012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE56EE8-69DD-4B80-BC46-9717D0F2A012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE56EE8-69DD-4B80-BC46-9717D0F2A012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE56EE8-69DD-4B80-BC46-9717D0F2A012}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{52BE4966-1D02-4263-B82E-C150D5959739} = {DC6E011B-C606-4068-B6D3-5F559EEE692B}
+		{985E9F06-6D52-4A6E-8CAF-DDA08FBAE4BB} = {52BE4966-1D02-4263-B82E-C150D5959739}
+		{5DE56EE8-69DD-4B80-BC46-9717D0F2A012} = {52BE4966-1D02-4263-B82E-C150D5959739}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {720BE63F-96F4-401B-94F6-0F31D97FC122}
+	EndGlobalSection
+EndGlobal
