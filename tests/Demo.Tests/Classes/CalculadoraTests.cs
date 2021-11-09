@@ -25,7 +25,7 @@ namespace Demo.Tests.Classes
 		[InlineData(7.5, 8, 15.5)]
 		[InlineData(16, 16, 32)]
 		[InlineData(32, 32, 64)]
-		public void Calculadora_Somar_RetornarValoresSomaCorretos(double v1, double v2, double total)
+		public void Calculadora_Somar_RetornarValoresSomaCorretos(decimal v1, decimal v2, decimal total)
 		{
 			// Arrange
 			var calculadora = new Calculadora();

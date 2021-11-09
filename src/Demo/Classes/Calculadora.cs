@@ -2,10 +2,13 @@
 {
 	public class Calculadora
 	{
-		public double Somar(double v1, double v2)
+		public decimal Somar(decimal v1, decimal v2)
 			=> v1 + v2;
 
-		public double Dividir(double v1, double v2)
+		public decimal Dividir(decimal v1, decimal v2)
 			=> v1 / v2;
+
+		public decimal Subtrair(decimal v1, decimal v2)
+			=> v1 - v2;
 	}
 }
