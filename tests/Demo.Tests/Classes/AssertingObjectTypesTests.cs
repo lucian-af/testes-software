@@ -6,7 +6,8 @@ namespace Demo.Tests
 {
 	public class AssertingObjectTypesTests
 	{
-		[Fact]
+		[Fact(DisplayName = "Deve retornar tipo funcionário")]
+		[Trait("Asserts", "Objects")]
 		public void FuncionarioFactory_Criar_DeveRetornarTipoFuncionario()
 		{
 			// Arrange & Act
@@ -16,7 +17,8 @@ namespace Demo.Tests
 			Assert.IsType<Funcionario>(funcionario);
 		}
 
-		[Fact]
+		[Fact(DisplayName = "Deve retornar classe derivada")]
+		[Trait("Asserts", "Objects")]
 		public void FuncionarioFactory_Criar_DeveRetornarTipoDerivadoPessoa()
 		{
 			// Arrange & Act

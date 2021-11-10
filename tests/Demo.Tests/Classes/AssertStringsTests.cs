@@ -6,7 +6,8 @@ namespace Demo.Tests
 {
 	public class AssertStringsTests
 	{
-		[Fact]
+		[Fact(DisplayName = "Retornar nome completo")]
+		[Trait("Asserts", "Strings")]
 		public void StringsTools_UnirNomes_RetornarNomeCompleto()
 		{
 			// Arrange
@@ -19,7 +20,8 @@ namespace Demo.Tests
 			Assert.Equal("Lucian AF", nomeCompleto);
 		}
 
-		[Fact]
+		[Fact(DisplayName = "Ignorar letras maísculas e minúsculas")]
+		[Trait("Asserts", "Strings")]
 		public void StringsTools_UnirNomes_DeveIgnorarCase()
 		{
 			// Arrange
@@ -32,7 +34,8 @@ namespace Demo.Tests
 			Assert.Equal("LuCiAn AF", nomeCompleto, true);
 		}
 
-		[Fact]
+		[Fact(DisplayName = "Deve conter parte do texto")]
+		[Trait("Asserts", "Strings")]
 		public void StringsTools_UnirNomes_DeveConterTrecho()
 		{
 			// Arrange
@@ -45,7 +48,8 @@ namespace Demo.Tests
 			Assert.Contains("uci", nomeCompleto);
 		}
 
-		[Fact]
+		[Fact(DisplayName = "Deve começar com parte do texto")]
+		[Trait("Asserts", "Strings")]
 		public void StringsTools_UnirNomes_DeveComecarCom()
 		{
 			// Arrange
@@ -58,7 +62,8 @@ namespace Demo.Tests
 			Assert.StartsWith("Lu", nomeCompleto);
 		}
 
-		[Fact]
+		[Fact(DisplayName = "Deve terminar com parte do texto")]
+		[Trait("Asserts", "Strings")]
 		public void StringsTools_UnirNomes_DeveAcabarCom()
 		{
 			// Arrange
@@ -71,7 +76,8 @@ namespace Demo.Tests
 			Assert.EndsWith("AF", nomeCompleto);
 		}
 
-		[Fact]
+		[Fact(DisplayName = "Validar por expressão regular")]
+		[Trait("Asserts", "Strings")]
 		public void StringsTools_UnirNomes_ValidarExpressaoRegular()
 		{
 			// Arrange

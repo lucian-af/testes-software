@@ -5,7 +5,8 @@ namespace Demo.Tests
 {
 	public class AssertNullBoolTests
 	{
-		[Fact]
+		[Fact(DisplayName = "Não deve ser nulo ou vazio")]
+		[Trait("Asserts", "Booleanos")]
 		public void Funcionario_Nome_NaoDeveSerNuloOuVazio()
 		{
 			// Arrange & Act
@@ -15,7 +16,8 @@ namespace Demo.Tests
 			Assert.False(string.IsNullOrEmpty(funcionario.Nome));
 		}
 
-		[Fact]
+		[Fact(DisplayName = "Não deve retorar valor")]
+		[Trait("Asserts", "Booleanos")]
 		public void Funcionario_Apelido_NaoDeveTerApelido()
 		{
 			// Arrange & Act

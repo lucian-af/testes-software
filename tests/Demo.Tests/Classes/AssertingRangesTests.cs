@@ -6,7 +6,8 @@ namespace Demo.Tests
 {
 	public class AssertingRangesTests
 	{
-		[Theory]
+		[Theory(DisplayName = "Faixa salarial por nível de profissional")]
+		[Trait("Asserts", "Ranges")]
 		[InlineData(700)]
 		[InlineData(1500)]
 		[InlineData(2000)]

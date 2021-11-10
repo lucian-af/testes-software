@@ -7,7 +7,8 @@ namespace Demo.Tests
 {
 	public class AssertingExceptionsTests
 	{
-		[Fact]
+		[Fact(DisplayName = "Erro de divisão por zero")]
+		[Trait("Asserts", "Exceptions")]
 		public void Calculadora_Dividir_DeveRetornarErroDivisaoPorZero()
 		{
 			// Arrange
@@ -17,7 +18,8 @@ namespace Demo.Tests
 			Assert.Throws<DivideByZeroException>(() => calculadora.Dividir(10, 0));
 		}
 
-		[Fact]
+		[Fact(DisplayName = "Erro de salário inferior ao permitido")]
+		[Trait("Asserts", "Exceptions")]
 		public void Funcionario_Salario_DeveRetornarErroSalarioInferiorPermitido()
 		{
 			// Arrange & Act & Assert
