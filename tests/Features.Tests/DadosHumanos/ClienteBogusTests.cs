@@ -22,7 +22,7 @@ namespace Features.Tests.DadosHumanos
 
 			// Assert 
 			Assert.True(result);
-			Assert.Equal(0, cliente.ValidationResult.Errors.Count);
+			Assert.Empty(cliente.ValidationResult.Errors);
 		}
 
 		[Fact(DisplayName = "Novo Cliente Inválido")]
@@ -37,7 +37,7 @@ namespace Features.Tests.DadosHumanos
 
 			// Assert 
 			Assert.False(result);
-			Assert.NotEqual(0, cliente.ValidationResult.Errors.Count);
+			Assert.NotEmpty(cliente.ValidationResult.Errors);
 		}
 	}
 }

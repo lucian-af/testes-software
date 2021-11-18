@@ -4,20 +4,26 @@ using System.Linq;
 using Bogus;
 using Bogus.DataSets;
 using Features.Entidades;
+using Features.Services;
+using Moq.AutoMock;
 using Xunit;
 
-namespace Features.Tests.DadosHumanos
+namespace Features.Tests.AutoMock
 {
-	[CollectionDefinition(nameof(ClienteBogusCollection))]
-	public class ClienteBogusCollection : ICollectionFixture<ClienteTestsBogusFixture>
-	{ }
-
-	public class ClienteTestsBogusFixture : IDisposable
+	[CollectionDefinition(nameof(ClienteAutoMockerCollection))]
+	public class ClienteAutoMockerCollection : ICollectionFixture<ClienteTestsAutoMockerFixture>
 	{
+	}
+
+	public class ClienteTestsAutoMockerFixture : IDisposable
+	{
+		public ClienteService ClienteService;
+		public AutoMocker Mocker;
+
 		public Cliente GerarClienteValido()
 			=> GerarClientes(1, true).FirstOrDefault();
 
-		public IEnumerable<Cliente> GerarClientesAleatorios()
+		public IEnumerable<Cliente> ObterClientesVariados()
 		{
 			var clientes = new List<Cliente>();
 
@@ -65,6 +71,14 @@ namespace Features.Tests.DadosHumanos
 					DateTime.Now));
 
 			return cliente;
+		}
+
+		public ClienteService ObterClienteService()
+		{
+			Mocker = new AutoMocker();
+			ClienteService = Mocker.CreateInstance<ClienteService>();
+
+			return ClienteService;
 		}
 
 		public void Dispose()
