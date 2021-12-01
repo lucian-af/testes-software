@@ -1,8 +1,7 @@
 ﻿using System;
 using MediatR;
-using NerdStore.Core.Messages;
 
-namespace NerdStore.Core.DomainObjects
+namespace NerdStore.Core.Messages.CommonMessages.Notifications
 {
     public class DomainNotification : Message, INotification
     {
