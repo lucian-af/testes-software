@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Solution Items", "1 - Solution Items", "{8F6FBA6B-AAFB-4D46-B268-67723BD20E6D}"
 	ProjectSection(SolutionItems) = preProject
-		..\.editorconfig = ..\.editorconfig
+		.editorconfig = .editorconfig
 		..\.gitattributes = ..\.gitattributes
 		..\.gitignore = ..\.gitignore
 	EndProjectSection
@@ -48,6 +48,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - IntegrationTests", "4 -
 	ProjectSection(SolutionItems) = preProject
 		INFO.md = INFO.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.BDD.Tests", "tests\NerdStore.BDD.Tests\NerdStore.BDD.Tests.csproj", "{50E5745D-CA32-43AB-93EB-2287B7B80EE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +97,10 @@ Global
 		{57820D16-B7CA-4F82-B344-755F5611B566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57820D16-B7CA-4F82-B344-755F5611B566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57820D16-B7CA-4F82-B344-755F5611B566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50E5745D-CA32-43AB-93EB-2287B7B80EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E5745D-CA32-43AB-93EB-2287B7B80EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E5745D-CA32-43AB-93EB-2287B7B80EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E5745D-CA32-43AB-93EB-2287B7B80EE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,6 +120,7 @@ Global
 		{8786D786-338E-4EAA-A460-2A5E25A37C61} = {8A802F31-86E0-45C7-BC46-D9A242CCB6B7}
 		{CCB6FAAF-6429-4FF0-9E8D-8D2277258B8F} = {8A802F31-86E0-45C7-BC46-D9A242CCB6B7}
 		{57820D16-B7CA-4F82-B344-755F5611B566} = {8A802F31-86E0-45C7-BC46-D9A242CCB6B7}
+		{50E5745D-CA32-43AB-93EB-2287B7B80EE9} = {9428BDCF-6287-4EDE-B9B6-7922AED1A2BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {720BE63F-96F4-401B-94F6-0F31D97FC122}
