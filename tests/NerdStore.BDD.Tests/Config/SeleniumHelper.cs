@@ -13,7 +13,7 @@ namespace NerdStore.BDD.Tests.Config
 		public readonly ConfigurationHelper Configuration;
 		public WebDriverWait Wait;
 
-		public SeleniumHelper(Browser browser, ConfigurationHelper configuration, bool headless = true)
+		public SeleniumHelper(Browser browser, ConfigurationHelper configuration, bool headless = false)
 		{
 			Configuration = configuration;
 			WebDriver = WebDriverFactory.CreateWebDriver(browser, Configuration.WebDrivers, headless);
@@ -67,6 +67,7 @@ namespace NerdStore.BDD.Tests.Config
 
 		public string ObterTextoElementoPorClasseCss(string className)
 			=> Wait.Until(ExpectedConditions.ElementIsVisible(By.ClassName(className))).Text;
+
 		public string ObterTextoElementoPorId(string id)
 			=> Wait.Until(ExpectedConditions.ElementIsVisible(By.Id(id))).Text;
 
